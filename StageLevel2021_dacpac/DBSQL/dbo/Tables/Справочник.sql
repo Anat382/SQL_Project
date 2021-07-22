@@ -1,0 +1,5 @@
+﻿CREATE TABLE [dbo].[СправочникTest]
+(
+	[Id] INT IDENTITY(1,1) NOT NULL PRIMARY KEY,
+	NameS NVARCHAR(50)
+)

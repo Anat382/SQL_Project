@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1525
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "DBSQL", "DBSQL\DBSQL.sqlproj", "{AA46DEBC-143E-4040-B586-47829C0E8852}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AA46DEBC-143E-4040-B586-47829C0E8852}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA46DEBC-143E-4040-B586-47829C0E8852}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA46DEBC-143E-4040-B586-47829C0E8852}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{AA46DEBC-143E-4040-B586-47829C0E8852}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA46DEBC-143E-4040-B586-47829C0E8852}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA46DEBC-143E-4040-B586-47829C0E8852}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0AFF2DF8-ECA9-443D-992E-78A54F188439}
+	EndGlobalSection
+EndGlobal

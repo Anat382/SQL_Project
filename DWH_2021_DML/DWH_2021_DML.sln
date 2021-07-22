@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1525
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "DWH_2021_DML", "DWH_2021_DML\DWH_2021_DML.dtproj", "{D03CA680-3CF2-4DFB-82DC-D0E154F0FE27}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D03CA680-3CF2-4DFB-82DC-D0E154F0FE27}.Development|Default.ActiveCfg = Development
+		{D03CA680-3CF2-4DFB-82DC-D0E154F0FE27}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5DAB8FD8-1BBB-412F-823F-6AF45789B26F}
+	EndGlobalSection
+EndGlobal

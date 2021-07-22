@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [Stage]
+    AUTHORIZATION [Cub_];
+
