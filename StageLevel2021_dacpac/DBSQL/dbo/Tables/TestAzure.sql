@@ -1,0 +1,4 @@
+CREATE TABLE [dbo].[TestAzure]
+(
+  [Id] INT NOT NULL PRIMARY KEY
+)

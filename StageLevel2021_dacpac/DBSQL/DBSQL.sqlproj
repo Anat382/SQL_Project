@@ -164,12 +164,13 @@
     <Build Include="Security\RoleMemberships.sql" />
     <Build Include="Security\Permissions.sql" />
     <Build Include="dbo\Tables\Справочник.sql" />
+    <Build Include="dbo\Tables\TestAzure.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="dbo\AddTableСправочник.sql" />
   </ItemGroup>
   <ItemGroup>
-    <PostDeploy Include="dbo\ExecAdd.sql" />
+    <None Include="dbo\Script.PostDeployment2.sql" />
   </ItemGroup>
   <Import Condition="'$(NetCoreBuild)' == 'true'" Project="$(NETCoreTargetsPath)\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
@@ -178,4 +179,7 @@
   <Target Name="BeforeBuild">
     <Delete Files="$(BaseIntermediateOutputPath)\project.assets.json" />
   </Target>
+  <ItemGroup>
+    <None Include="dbo\TestInsert.sql" />
+  </ItemGroup>
 </Project>
