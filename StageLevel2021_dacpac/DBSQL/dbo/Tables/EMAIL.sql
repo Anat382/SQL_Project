@@ -1,5 +1,5 @@
-﻿CREATE TABLE [dbo].[EMAIL] (
-    [ID]   INT            NOT NULL,
-    [Name] NVARCHAR (100) NOT NULL
-);
+﻿CREATE TABLE [dbo].[EMAIL](
+	[ID] [int] NOT NULL,
+	[Name] [nvarchar](100) NOT NULL
+) ON [PRIMARY]
 

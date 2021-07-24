@@ -1,5 +1,5 @@
-﻿CREATE TABLE [dbo].[Source] (
-    [ID]   INT           NOT NULL,
-    [NAME] NVARCHAR (50) NOT NULL
-);
+﻿CREATE TABLE [dbo].[Source](
+	[ID] [int] NOT NULL,
+	[NAME] [nvarchar](50) NOT NULL
+) ON [PRIMARY]
 

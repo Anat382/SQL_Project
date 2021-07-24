@@ -1,12 +1,12 @@
-﻿CREATE TABLE [dbo].[Emploee] (
-    [ID]                SMALLINT      NOT NULL,
-    [DateStart]         NVARCHAR (50) NULL,
-    [DateEnd]           NVARCHAR (50) NULL,
-    [EMAIL]             NVARCHAR (50) NULL,
-    [WORK_POSITION_ID]  TINYINT       NULL,
-    [EMAIL_ID]          SMALLINT      NULL,
-    [LAST_NAME]         NVARCHAR (50) NULL,
-    [SECOND_NAME]       NVARCHAR (50) NULL,
-    [PERSONAL_BIRTHDAY] NVARCHAR (50) NULL
-);
+﻿CREATE TABLE [dbo].[Emploee](
+	[ID] [smallint] NOT NULL,
+	[DateStart] [nvarchar](50) NULL,
+	[DateEnd] [nvarchar](50) NULL,
+	[EMAIL] [nvarchar](50) NULL,
+	[WORK_POSITION_ID] [tinyint] NULL,
+	[EMAIL_ID] [smallint] NULL,
+	[LAST_NAME] [nvarchar](50) NULL,
+	[SECOND_NAME] [nvarchar](50) NULL,
+	[PERSONAL_BIRTHDAY] [nvarchar](50) NULL
+) ON [PRIMARY]
 

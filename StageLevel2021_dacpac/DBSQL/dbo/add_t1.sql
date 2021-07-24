@@ -1,0 +1,1 @@
+﻿INSERT INTO dbo.Table1 VALUES('n1'), ('n2')
