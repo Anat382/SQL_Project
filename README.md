@@ -38,3 +38,39 @@
 ### **CUB** - SSAS
 - Куб, тип модели - многомерная
 - Отчетность построенная в MS Excel
+
+## ***Созданные объекты в хранилище данных***
+
+**JOB**
+- Сриншот созданных задач в планировщике [*job.png*](https://github.com/Anat382/SQL_Project/blob/master/CreatedJob.png).
+
+**DB MASTER**
+- Хранимая процедура для обслуживания индексов [*uspCleanUP_index*](https://github.com/Anat382/SQL_Project/blob/master/MasterDacPac/MasterDacPac/dbo/Stored%20Procedures/uspCleanUP_index.sql).
+
+**DB DWH2021**
+- Схема базы данных DWH2021 [*СхемаБД*](https://github.com/Anat382/SQL_Project/blob/master/DWH2021_dacpac/Схема%20БД%20DWH2021.png).
+- Хранимая процедура для создания таблиц(ручная) [*uspCreateTableDWH2021*](https://github.com/Anat382/SQL_Project/blob/master/DWH2021_dacpac/DWH2021_dacpac/dbo/Stored%20Procedures/uspCreateTableDWH2021.sql).
+- Пользовательская скалярная функция для получения списка полей в таблице [*ufnString_agg*](https://github.com/Anat382/SQL_Project/blob/master/DWH2021_dacpac/DWH2021_dacpac/dbo/Functions/ufnString_agg.sql).
+
+**DB DataBase2021**
+- Схема базы данных DWH2021 [*СхемаБД*](https://github.com/Anat382/SQL_Project/blob/master/DataBase2021_dacpac/Схема%20БД%20DataBase2021.png).
+- Хранимая процедура для генерации и обработки исходных данных полученные из БД StageLevel2021 (ручная) [*uspCreateDataBase2021*](https://github.com/Anat382/SQL_Project/blob/master/DataBase2021_dacpac/DataBase2021_dacpac/dbo/Stored%20Procedures/uspCreateDataBase2021.sql).
+- Хранимая процедура для обноовлении таблиц  добалением записей из исходных данных  из БД StageLevel2021 (job)  [*uspUdateDataBase2021*](https://github.com/Anat382/SQL_Project/blob/master/DataBase2021_dacpac/DataBase2021_dacpac/dbo/Stored%20Procedures/uspUdateDataBase2021.sql).
+
+**SSIS для DWH**
+- Скрин интеграционный проекта для передачи данных из DataBase2021 [*SSIS_DWH*](https://github.com/Anat382/SQL_Project/blob/master/DWH_2021_DML/SSIS%20DWH.png).
+
+**CUB**
+- Схема многомерной модели куба [*Схема*](https://github.com/Anat382/SQL_Project/blob/master/CUB/Схема%20звезда%20Cub.png).
+- Ааналитический отчёт по продажам [*Report*](https://github.com/Anat382/SQL_Project/blob/master/CUB/v1_Cub_Аналитика%20по%20продажам.xlsx).
+- Скриншот отчёта [*Report.png*](https://github.com/Anat382/SQL_Project/blob/master/CUB/Скрин%20отчёта%20в%20Excel%20(подключение%20к%20cub).png).
+
+
+
+
+
+
+
+
+`
+
