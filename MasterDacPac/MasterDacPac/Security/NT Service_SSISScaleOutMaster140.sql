@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [NT Service\SSISScaleOutMaster140]
+    FROM WINDOWS WITH DEFAULT_LANGUAGE = [русский];
+
