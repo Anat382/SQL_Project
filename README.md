@@ -2,7 +2,7 @@
 
 ## Проект созданного хранилища
 
-## Проект направлен на разработку хранилища данных под бизнес-потребности предприятия
+## Проект направлен на разработку хранилища данных под бизнес-потребности предприятия. У предприятия есть CRM система, в данном проекте создана имитация передача данных в хранилище из *(CRM -- БД StageLevel2021 -- БД DataBase2021 -- БД DWH)*
 
 ## БП предприятия:
 - получение заявок из веб сервисов (источники привлечения клиентов)
@@ -23,19 +23,19 @@
 - DataBase2021 (stage)
 - DWH_2021 (prodaction)
 
-### **StageLevel2021_dacpac** - DataBase
+### [**StageLevel2021_dacpac** - DataBase](https://github.com/Anat382/SQL_Project/tree/master/StageLevel2021_dacpac). 
 - харанение исходных данных
 
-### **DataBase2021_dacpac** - DataBase
+### [**DataBase2021_dacpac** - DataBase](https://github.com/Anat382/SQL_Project/tree/master/DataBase2021_dacpac). 
 - Обработанные данные, тип cистемы - OLTP, нормализация приведена к 3F, методы - хранимые процедуры
 
-### **DWH_2021_dacpac** - DataBase
+### [**DWH_2021_dacpac** - DataBase](https://github.com/Anat382/SQL_Project/tree/master/DWH2021_dacpac). 
 - Витрины данных, тип cистемы - OLAP, денормализация, метод получения данных в БД - SSIS
 
-### **DWH_2021_DML** - SSIS 
+### [**DWH_2021_DML** - SSIS](https://github.com/Anat382/SQL_Project/tree/master/DWH_2021_DML)
 - настроенный ETL процесс из DataBase2021 в DWH_2021
 
-### **CUB** - SSAS
+### [**CUB** - SSAS](https://github.com/Anat382/SQL_Project/tree/master/CUB)
 - Куб, тип модели - многомерная
 - Отчетность построенная в MS Excel
 
