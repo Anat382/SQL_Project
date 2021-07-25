@@ -167,6 +167,10 @@
     <Build Include="dbo\Tables\Справочник.sql" />
     <None Include="Scripts\ScriptsIgnoredOnImport.sql" />
     <Build Include="dbo\Tables\Table1.sql" />
+    <Build Include="dbo\Tables\Log_index_defragmentation.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
   </ItemGroup>
   <ItemGroup>
     <None Include="dbo\add_t1.sql" />

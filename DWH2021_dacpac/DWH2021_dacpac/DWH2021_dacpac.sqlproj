@@ -196,6 +196,10 @@
     <Build Include="Security\Sales.sql" />
     <Build Include="Security\Stage.sql" />
     <Build Include="Security\Permissions.sql" />
+    <Build Include="dbo\Tables\Log_index_defragmentation.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
   </ItemGroup>
   <Import Condition="'$(NetCoreBuild)' == 'true'" Project="$(NETCoreTargetsPath)\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
