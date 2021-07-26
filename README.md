@@ -9,7 +9,7 @@
 - обработка заявок ОП и заключение договора на оказание юридических услуг
 
 
-### Цели проекта:
+### Цель проекта:
 - Разработать аналитичикую отчетность и BI мониторинг с целью принятия управленченских решений
 
 ### Задачи проекта:
@@ -58,7 +58,7 @@
 - Хранимая процедура для обноовлении таблиц  добалением записей из исходных данных  из БД StageLevel2021 (job)  [*uspUdateDataBase2021*](https://github.com/Anat382/SQL_Project/blob/master/DataBase2021_dacpac/DataBase2021_dacpac/dbo/Stored%20Procedures/uspUdateDataBase2021.sql).
 
 **SSIS для DWH**
-- Скрин интеграционный проекта для передачи данных из DataBase2021 [*SSIS_DWH*](https://github.com/Anat382/SQL_Project/blob/master/DWH_2021_DML/SSIS%20DWH.png).
+- Скрин интеграционного проекта для передачи данных из DataBase2021 [*SSIS_DWH*](https://github.com/Anat382/SQL_Project/blob/master/DWH_2021_DML/SSIS%20DWH.png).
 
 **CUB**
 - Схема многомерной модели куба [*Схема*](https://github.com/Anat382/SQL_Project/blob/master/CUB/Схема%20звезда%20Cub.png).
