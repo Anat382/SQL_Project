@@ -10,6 +10,8 @@
     [SecondName] NVARCHAR (50) NOT NULL,
     [Birhday]    DATE          NOT NULL,
     [DLM]        DATETIME2 (7) NOT NULL,
-    PRIMARY KEY CLUSTERED ([ID] ASC)
+    CONSTRAINT [PK] PRIMARY KEY CLUSTERED ([ID] ASC)
 );
+
+
 

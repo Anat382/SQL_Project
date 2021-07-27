@@ -158,7 +158,7 @@ BEGIN
 	------ Employee -----
 
 	CREATE TABLE dbo.Employee(
-		ID					int			 not null  primary key,
+		ID					int			 not null  CONSTRAINT PK primary key (ID asc) ,
 		[EmploeeID]			int			 not null ,
 		DateStart			Datetime2 not null,
 		DateEnd				Datetime2  null,
@@ -170,6 +170,16 @@ BEGIN
 		Birhday				date		 not null,
 		DLM			DATETIME2		not null
 	)
+
+--ALTER TABLE  dbo.Employee DROP CONSTRAINT PK__Employee__3214EC2779473C11
+--ALTER TABLE TestTable6 ADD CONSTRAINT PK_TestTable6_C3 UNIQUE 
+--(Column3);
+
+	--ALTER INDEX [PK__Employee__3214EC2779473C11] ON dbo.Employee DISABLE;
+	--ALTER INDEX PK__Email__3214EC2731C605CB ON dbo.Employee REBUILD;
+	--ALTER TABLE dbo.Employee
+	--CHECK CONSTRAINT [PK__Employee__3214EC2779473C11];  
+	--GO  
 
 	--CREATE UNIQUE CLUSTERED INDEX IXС_Employee_EmploeeID ON dbo.Employee
 	-- (
@@ -187,10 +197,13 @@ BEGIN
 		DLM			DATETIME2		not null 
 	)
 
-	--CREATE UNIQUE CLUSTERED INDEX IXС_Lead_Lead_ID ON dbo.Lead
-	-- (
-	-- Lead_ID ASC
-	-- )
+	CREATE NONCLUSTERED INDEX IXNС_Lead_DateCtreate
+		ON [dbo].[Lead] ([DateCtreate] asc)
+		INCLUDE ([CustomerID],[StatusID],[SourceID])
+
+	CREATE NONCLUSTERED INDEX IXNС_Lead_CustomerID
+		ON [dbo].[Lead] ([CustomerID] asc)
+		INCLUDE ([DateCtreate],[StatusID],[SourceID])
 	--==================================================================================
 	------ Deal -----
 
@@ -209,8 +222,9 @@ BEGIN
 	-- (
 	-- Deal_ID ASC
 	-- )
+
 	CREATE NONCLUSTERED INDEX IXNС_Deal_Lead_ID 
-	ON [dbo].[Deal] ([Lead_ID])
+	ON [dbo].[Deal] ([Lead_ID] asc)
 	INCLUDE ([DateCreate],[DateClose],[TypeID],[StatusID],[EmploeeID])
 	
 

@@ -8,3 +8,17 @@
     PRIMARY KEY CLUSTERED ([Lead_ID] ASC)
 );
 
+
+
+
+GO
+CREATE NONCLUSTERED INDEX [IXNС_Lead_DateCtreate]
+    ON [dbo].[Lead]([DateCtreate] ASC)
+    INCLUDE([CustomerID], [StatusID], [SourceID]);
+
+
+GO
+CREATE NONCLUSTERED INDEX [IXNС_Lead_CustomerID]
+    ON [dbo].[Lead]([CustomerID] ASC)
+    INCLUDE([DateCtreate], [StatusID], [SourceID]);
+
