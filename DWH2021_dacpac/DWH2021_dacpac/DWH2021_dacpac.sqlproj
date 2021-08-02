@@ -124,6 +124,8 @@
     <Folder Include="dbo\Functions\" />
     <Folder Include="dbo\Stored Procedures\" />
     <Folder Include="Storage\" />
+    <Folder Include="sch_1\" />
+    <Folder Include="sch_1\Tables\" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\Tables\FactConvertLeadToDeal.sql">
@@ -216,6 +218,15 @@
     <Build Include="Storage\MonthData.sql" />
     <Build Include="Storage\fnMonthPartition.sql" />
     <Build Include="Storage\schmMonthPartition.sql" />
+    <Build Include="dbo\Tables\DealVersion.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="sch_1\Tables\DealVersion.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="Security\sch_1.sql" />
   </ItemGroup>
   <Import Condition="'$(NetCoreBuild)' == 'true'" Project="$(NETCoreTargetsPath)\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>

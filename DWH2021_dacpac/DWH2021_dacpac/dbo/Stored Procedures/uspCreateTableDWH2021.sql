@@ -14,8 +14,43 @@ BEGIN
 
 
 	-- Delete table
-	DROP TABLE IF EXISTS dbo.[Deal]
-	DROP TABLE IF EXISTS dbo.[Lead]
+	DROP TABLE IF EXISTS dbo.[FactConvertLeadToDeal];
+
+
+	---------------------------------------- 
+	-- Чтение системно версионных таблиц
+	/*
+	SELECT ValidFrom, ValidTo, *
+	 FROM Sales.Customers FOR System_Time AS OF '20130101'
+	-- FROM Sales.Customers FOR System_Time BETWEEN '20121201' AND '20130101'
+	-- FROM Sales.Customers FOR System_Time FROM '20121201' TO '20130101'
+	-- FROM Sales.Customers FOR System_Time CONTAINED IN ('20130501' ,'20190212')
+	WHERE CustomerName like 'J%'	
+	ORDER BY CustomerID
+
+	SELECT ValidFrom, ValidTo, c.*
+	FROM Sales.Customers FOR System_Time ALL c
+	WHERE CustomerName like 'J%'	
+	ORDER BY c.CustomerID, c.ValidFrom
+	*/
+
+	----- delete dbo.Deal
+	BEGIN TRY
+
+		IF OBJECT_ID( N'dbo.DealVersion' ) IS NOT NULL
+			ALTER TABLE dbo.DealVersion SET (SYSTEM_VERSIONING = OFF);
+			DROP TABLE IF EXISTS dbo.DealVersion
+			DROP TABLE IF EXISTS [sch_1].DealVersion;
+
+	END TRY
+	BEGIN CATCH
+		
+		DROP TABLE IF EXISTS dbo.DealVersion	
+		
+	END CATCH;
+
+	DROP TABLE IF EXISTS dbo.[Deal]	
+	DROP TABLE IF EXISTS dbo.[Lead]	
 	DROP TABLE IF EXISTS dbo.[Customers]
 	DROP TABLE IF EXISTS dbo.[Employee]
 	DROP TABLE IF EXISTS dbo.[Job]
@@ -27,7 +62,7 @@ BEGIN
 	DROP TABLE IF EXISTS dbo.[Price]
 	DROP TABLE IF EXISTS dbo.[Source]
 
-	DROP TABLE IF EXISTS [Sales].[FactConvertLeadToDeal];
+
 
 
 	---- Region -----
@@ -207,6 +242,22 @@ BEGIN
 	--==================================================================================
 	------ Deal -----
 
+	CREATE TABLE dbo.DealVersion(
+		Deal_ID		int			not null primary key,
+		Lead_ID		int			not null,
+		DateCreate datetime2	not null,
+		DateClose	datetime2	null,
+		TypeID		int			not null,
+		StatusID	int			not null,
+		EmploeeID	int			not null,
+		DLM			DATETIME2		not null
+		, StartTime DATETIME2 GENERATED ALWAYS AS ROW START NOT NULL
+		, EndTime DATETIME2 GENERATED ALWAYS AS ROW END NOT NULL
+		, PERIOD FOR SYSTEM_TIME (StartTime, EndTime)
+	)
+	WITH (SYSTEM_VERSIONING = ON (HISTORY_TABLE = sch_1.DealVersion));
+
+
 	CREATE TABLE dbo.Deal(
 		Deal_ID		int			not null primary key,
 		Lead_ID		int			not null,
@@ -245,7 +296,7 @@ BEGIN
 			[Week] int NOT NULL,
 			[Weekday] int NOT NULL,
 			DLM			DATETIME2		not null
-			)
+	)
 
 	--CREATE UNIQUE CLUSTERED INDEX IXС_CalendarDay_CreatedDate ON dbo.[CalendarDay]
 	-- (
