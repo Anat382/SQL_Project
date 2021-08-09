@@ -1,0 +1,2 @@
+﻿CREATE USER [Менеджер_52] WITHOUT LOGIN;
+

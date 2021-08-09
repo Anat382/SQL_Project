@@ -227,6 +227,14 @@
       <QuotedIdentifier>On</QuotedIdentifier>
     </Build>
     <Build Include="Security\sch_1.sql" />
+    <Build Include="Security\Менеджер_54.sql" />
+    <Build Include="Security\Менеджер_52.sql" />
+    <Build Include="Security\ManagerUser.sql" />
+    <Build Include="dbo\Functions\fn_SecurityPredicate.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="Security\FactPolicyFilter.sql" />
   </ItemGroup>
   <Import Condition="'$(NetCoreBuild)' == 'true'" Project="$(NETCoreTargetsPath)\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
