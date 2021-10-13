@@ -1,17 +1,17 @@
-﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="782e4085-0b01-43ca-af51-662b2fc6cfde" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="d8175e13-698b-4d2c-9c4c-50418d95d243" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>cub</ID>
   <MeasureGroups>
     <MeasureGroup>
       <ID>Fact Convert Lead To Deal</ID>
       <Partitions>
-        <Partition dwd:design-time-name="8635bfcc-603b-4a58-9739-490b1a0a5d24">
+        <Partition dwd:design-time-name="6af3ac84-4457-4d44-8872-e22f14073c92">
           <ID>Fact Convert Lead To Deal</ID>
           <Name>Fact Convert Lead To Deal</Name>
           <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
           <State>Unprocessed</State>
-          <Source xsi:type="DsvTableBinding" dwd:design-time-name="3309eefd-2454-44d1-91da-e74c213b8f2d">
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="e4d6dc7f-8dff-4944-91e6-6d0e142532a1">
             <DataSourceViewID>DWH2021</DataSourceViewID>
             <TableID>dbo_FactConvertLeadToDeal</TableID>
           </Source>
@@ -24,14 +24,14 @@
     <MeasureGroup>
       <ID>Fact Convert Lead To Deal 1</ID>
       <Partitions>
-        <Partition dwd:design-time-name="161c3c25-f140-4a81-9c79-08a4df6b9018">
+        <Partition dwd:design-time-name="02b95f85-a73d-4f6e-b9f5-c914de800154">
           <ID>Fact Convert Lead To Deal</ID>
           <Name>Fact Convert Lead To Deal</Name>
           <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
           <State>Unprocessed</State>
-          <Source xsi:type="DsvTableBinding" dwd:design-time-name="87dd629e-f85f-46db-a667-64646a85458d">
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="8972e868-f491-4053-863d-690cfbdeff9a">
             <DataSourceViewID>DWH2021</DataSourceViewID>
             <TableID>dbo_FactConvertLeadToDeal</TableID>
           </Source>
